@@ -261,7 +261,7 @@ body {
 .stat-number {
     font-size: 2rem;
     font-weight: 700;
-    color: #a855f7;
+    /* color: #a855f7; */
     margin-bottom: 0.25rem;
 }
 
