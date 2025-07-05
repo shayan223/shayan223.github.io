@@ -257,7 +257,7 @@ scrollProgress.style.cssText = `
     left: 0;
     width: 0%;
     height: 3px;
-    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    background: linear-gradient(90deg, #7c3aed, #8b5cf6);
     z-index: 10001;
     transition: width 0.1s ease;
 `;

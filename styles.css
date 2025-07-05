@@ -47,13 +47,13 @@ body {
 .nav-logo a {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #2563eb;
+    color: #7c3aed;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav-logo a:hover {
-    color: #1d4ed8;
+    color: #6d28d9;
 }
 
 .nav-menu {
@@ -71,7 +71,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #2563eb;
+    color: #7c3aed;
 }
 
 .nav-link::after {
@@ -81,7 +81,7 @@ body {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #2563eb;
+    background-color: #7c3aed;
     transition: width 0.3s ease;
 }
 
@@ -109,7 +109,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
     position: relative;
     overflow: hidden;
     padding-top: 100px;
@@ -224,7 +224,7 @@ body {
 .stat-number {
     font-size: 2rem;
     font-weight: 700;
-    color: #3b82f6;
+    color: #a855f7;
     margin-bottom: 0.25rem;
 }
 
@@ -249,14 +249,14 @@ body {
 }
 
 .btn-primary {
-    background: #2563eb;
+    background: #7c3aed;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #1d4ed8;
+    background: #6d28d9;
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
 }
 
 .btn-secondary {
@@ -336,7 +336,7 @@ body {
     content: '';
     width: 4px;
     height: 20px;
-    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    background: linear-gradient(135deg, #7c3aed, #8b5cf6);
     border-radius: 2px;
 }
 
@@ -465,7 +465,7 @@ body {
 .research-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    background: linear-gradient(135deg, #7c3aed, #8b5cf6);
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -483,18 +483,25 @@ body {
     font-weight: 600;
     margin-bottom: 1rem;
     color: #1e293b;
+    min-height: 3.2rem;
+    display: flex;
+    align-items: flex-start;
 }
 
 .research-abstract {
     color: #64748b;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+    flex-grow: 1;
+    min-height: 4.8rem;
 }
 
 .research-meta {
     display: flex;
     gap: 1rem;
     margin-bottom: 1.5rem;
+    min-height: 2rem;
+    align-items: center;
 }
 
 .research-year, .research-journal {
@@ -509,14 +516,15 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: #2563eb;
+    color: #7c3aed;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+    min-height: 1.5rem;
 }
 
 .research-link:hover {
-    color: #1d4ed8;
+    color: #6d28d9;
 }
 
 /* Contact Section */
@@ -567,7 +575,7 @@ body {
 }
 
 .contact-method i {
-    color: #2563eb;
+    color: #7c3aed;
     font-size: 1.2rem;
     width: 20px;
 }
@@ -604,7 +612,7 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #2563eb;
+    border-color: #7c3aed;
 }
 
 .form-group textarea {
@@ -640,7 +648,7 @@ body {
 }
 
 .social-links a:hover {
-    color: #3b82f6;
+    color: #8b5cf6;
 }
 
 /* Animations */
@@ -835,7 +843,7 @@ body {
 
 .visual-element i {
     font-size: 2.5rem;
-    color: #2563eb;
+    color: #7c3aed;
     margin-bottom: 1rem;
 }
 
@@ -900,7 +908,7 @@ body {
 }
 
 .area-item i {
-    color: #2563eb;
+    color: #7c3aed;
     font-size: 1.2rem;
     width: 20px;
 }
@@ -923,33 +931,4 @@ body {
     color: #64748b;
     margin-bottom: 1.5rem;
     line-height: 1.6;
-}
-
-/* Updated Skills Section */
-.skill-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 0.75rem;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    border: 1px solid transparent;
-}
-
-.skill-item:hover {
-    background: #f8fafc;
-    border-color: #e2e8f0;
-    transform: translateX(5px);
-}
-
-.skill-item i {
-    color: #10b981;
-    font-size: 1.1rem;
-    min-width: 20px;
-}
-
-.skill-name {
-    font-weight: 500;
-    color: #374151;
-    font-size: 0.95rem;
 } 
