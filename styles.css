@@ -454,7 +454,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: space-between;
 }
 
 .research-card:hover {
@@ -501,7 +500,7 @@ body {
     gap: 1rem;
     margin-bottom: 1.5rem;
     min-height: 2rem;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .research-year, .research-journal {
@@ -521,6 +520,7 @@ body {
     font-weight: 500;
     transition: color 0.3s ease;
     min-height: 1.5rem;
+    margin-top: auto;
 }
 
 .research-link:hover {
