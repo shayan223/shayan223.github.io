@@ -277,8 +277,20 @@ body {
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     animation: bounce 2s infinite;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.scroll-indicator:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-50%) scale(1.1);
 }
 
 /* Skills Section */

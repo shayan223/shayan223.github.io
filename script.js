@@ -266,4 +266,18 @@ document.body.appendChild(scrollProgress);
 window.addEventListener('scroll', () => {
     const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
     scrollProgress.style.width = scrolled + '%';
-}); 
+});
+
+// Scroll indicator click functionality
+const scrollIndicator = document.querySelector('.scroll-indicator');
+if (scrollIndicator) {
+    scrollIndicator.addEventListener('click', () => {
+        const skillsSection = document.querySelector('#skills');
+        if (skillsSection) {
+            skillsSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+} 
