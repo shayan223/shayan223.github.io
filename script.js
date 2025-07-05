@@ -192,29 +192,6 @@ notificationStyles.textContent = `
 `;
 document.head.appendChild(notificationStyles);
 
-// Profile image upload functionality (optional)
-const profileImage = document.getElementById('profile-img');
-const profileOverlay = document.querySelector('.profile-overlay');
-
-if (profileOverlay) {
-    profileOverlay.addEventListener('click', () => {
-        const input = document.createElement('input');
-        input.type = 'file';
-        input.accept = 'image/*';
-        input.onchange = function(e) {
-            const file = e.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    profileImage.src = e.target.result;
-                };
-                reader.readAsDataURL(file);
-            }
-        };
-        input.click();
-    });
-}
-
 // Intersection Observer for fade-in animations
 const fadeObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
