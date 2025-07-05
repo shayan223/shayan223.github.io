@@ -39,34 +39,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Animate skill bars on scroll
-const observerOptions = {
-    threshold: 0.5,
-    rootMargin: '0px 0px -100px 0px'
-};
-
-const skillObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const skillBars = entry.target.querySelectorAll('.skill-progress');
-            skillBars.forEach(bar => {
-                const width = bar.style.width;
-                bar.style.width = '0%';
-                setTimeout(() => {
-                    bar.style.width = width;
-                }, 200);
-            });
-            skillObserver.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
-
-// Observe skills section
-const skillsSection = document.querySelector('.skills');
-if (skillsSection) {
-    skillObserver.observe(skillsSection);
-}
-
 // Contact form handling
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
