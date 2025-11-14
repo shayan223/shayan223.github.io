@@ -833,6 +833,10 @@ body {
         text-align: left;
     }
 
+    .why-matters-text {
+        order: 1;
+    }
+
     .why-matters-text p {
         font-size: 1rem;
         line-height: 1.7;
@@ -840,12 +844,16 @@ body {
     }
 
     .why-matters-visual {
+        order: 2;
         flex-direction: column;
         gap: 1.5rem;
+        margin-top: 1rem;
+        width: 100%;
     }
 
     .visual-element {
         padding: 1.5rem;
+        width: 100%;
     }
 
     .visual-element i {
