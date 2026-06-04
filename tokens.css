@@ -1,0 +1,55 @@
+:root {
+    --color-paper: #fbf7ef;
+    --color-surface: #f2eadf;
+    --color-surface-alt: #e8f0ec;
+    --color-ink: #18201c;
+    --color-ink-soft: #253029;
+    --color-muted: #58635e;
+    --color-muted-on-ink: #c5d0c8;
+    --color-line: #d8ccc0;
+    --color-ink-line: #3d4941;
+    --color-accent: #a43d2c;
+    --color-accent-strong: #7f2d20;
+    --color-teal: #28736e;
+    --color-focus: #f0c8be;
+
+    --font-display: "Newsreader", Georgia, serif;
+    --font-body: "Instrument Sans", Arial, sans-serif;
+
+    --space-3xs: 0.25rem;
+    --space-2xs: 0.5rem;
+    --space-xs: 0.75rem;
+    --space-s: 1rem;
+    --space-m: 1.5rem;
+    --space-l: 2.25rem;
+    --space-xl: 3.5rem;
+    --space-2xl: 5rem;
+    --space-3xl: 7rem;
+
+    --text-kicker: 0.75rem;
+    --text-small: 0.92rem;
+    --text-body: 1rem;
+    --text-large: 1.18rem;
+    --text-xl: 1.38rem;
+    --text-2xl: 1.85rem;
+    --text-3xl: 2.4rem;
+    --text-4xl: 3.2rem;
+    --text-5xl: 4.3rem;
+    --text-6xl: 5.8rem;
+
+    --tracking-wide: 0.12em;
+
+    --ease-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+    --dur-fast: 160ms;
+    --dur-med: 260ms;
+    --dur-slow: 520ms;
+
+    --rule-thin: 1px;
+    --rule-medium: 2px;
+
+    --radius-s: 8px;
+    --radius-m: 8px;
+    --radius-pill: 999px;
+
+    --size-page: 1180px;
+}

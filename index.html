@@ -3,451 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shayan - Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Shayan Jalalipour is an AI/ML researcher focused on robust machine learning, multimodal reinforcement learning, computer vision, diffusion models, and LLM reliability.">
+    <title>Shayan Jalalipour | AI/ML Researcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="tokens.css?v=20260604">
+    <link rel="stylesheet" href="styles.css?v=20260604">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Shayan Jalalipour</a>
-            </div>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a class="brand" href="#home" aria-label="Shayan Jalalipour home">SJ</a>
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#focus" class="nav-link">Focus</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-layout">
-                    <div class="hero-image-section">
-                        <div class="profile-image-large">
-                            <img src="profile.jpg" alt="Shayan Jalalipour" id="profile-img">
-                        </div>
-                    </div>
-                    <div class="hero-text-section">
-                        <h1 class="hero-title">Hi, I'm Shayan Jalalipour</h1>
-                        <p class="hero-subtitle">AI/ML Researcher & Developer</p>
-                        <p class="hero-description">
-                            I'm an AI/ML researcher based at Portland State University, where I dive into a wide range of problems at the intersection of data, 
-                            vision, language, and maps. My professional experience includes data science, reinforcement learning, computer vision, 
-                            multi‑modal & diffusion models, and Geographic Information Systems (GIS). Alongside these, I bring solid software development know‑how: Python, 
-                            PyTorch, Pandas, SQL, and the full data-to-solution pipeline to build and deploy ML systems.
-                        </p>
-                        <p class="hero-description">
-                            Currently working on cutting-edge research in artificial intelligence and computer vision, 
-                            I enjoy tackling complex problems and turning ideas into reality. When I'm not coding or researching, 
-                            you can find me exploring new technologies or collaborating with fellow researchers.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="#skills" class="btn btn-secondary">View My Skills</a>
-                            <a href="#research" class="btn btn-secondary">See My Research</a>
-                        </div>
-                        <div class="hero-stats">
-                            <div class="stat-item">
-                                <span class="stat-number">5+</span>
-                                <span class="stat-label">Years Experience</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">3</span>
-                                <span class="stat-label">Research Publications</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <main id="home">
+        <section class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-media">
+                <img src="profile.jpg" alt="Shayan Jalalipour">
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- Why It Matters Section -->
-    <section class="why-matters">
-        <div class="container">
-            <h2 class="section-title">My Mission</h2>
-            <div class="why-matters-content">
-                <div class="why-matters-text">
-                    <p>
-                        My passion for AI/ML stems from a deep curiosity about how we can leverage technology to solve real-world problems. 
-                        Every research project I undertake is driven by the potential to make a meaningful impact on people's lives.
-                    </p>
-                    <p>
-                        Whether it's developing computer vision systems that can assist in medical diagnosis, creating adversarially robust risk-critical AI agents,
-                        or building GIS applications that help communities make better decisions, I believe technology should serve humanity.
-                    </p>
-                    <p>
-                        I get energized by solving interdisciplinary challenges. Projects that sit at the crossroads of AI, vision, language, 
-                        and more. I'm driven to connect theory with practical impact, whether that's visual scene understanding, generative modeling, or 
-                        building RL agents for real‑world environments. I thrive when I'm stretching across domains to build something that matters.
-                    </p>
-                    <p>
-                        The intersection of data, vision, language, represents a frontier where we can create systems that not only 
-                        understand our world better but also help us navigate and improve it. This is where I want to make my mark.
-                    </p>
-                </div>
-                <div class="why-matters-visual">
-                    <div class="visual-element">
-                        <i class="fas fa-lightbulb"></i>
-                        <h3>Innovation</h3>
-                        <p>Pushing boundaries in AI research</p>
-                    </div>
-                    <div class="visual-element">
-                        <i class="fas fa-heart"></i>
-                        <h3>Impact</h3>
-                        <p>Creating solutions that matter</p>
-                    </div>
-                    <div class="visual-element">
-                        <i class="fas fa-globe"></i>
-                        <h3>Global Reach</h3>
-                        <p>Technology that serves humanity</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Let's Collaborate Section -->
-    <section class="collaborate">
-        <div class="container">
-            <h2 class="section-title">Let's Collaborate</h2>
-            <div class="collaborate-content">
-                <div class="collaborate-text">
-                    <h3>Ready to Work Together?</h3>
-                    <p>
-                        I'm always excited to explore new opportunities for collaboration, whether it's research projects, 
-                        industry partnerships, or academic initiatives. My expertise spans multiple domains, and I love 
-                        working with teams that share a passion for innovation and impact.
-                    </p>
-                    <p>Whether you want to explore new ML methods, build pipelines for spatial or visual data, or just 
-                        geek out about the possibilities of AI, I'd love to connect. I'm always open to research ideas, 
-                        collaborations, and curious conversations.
-                    </p>
-                    <div class="collaboration-areas">
-                        <div class="area-item">
-                            <i class="fas fa-microscope"></i>
-                            <span>Research Partnerships</span>
-                        </div>
-                        <div class="area-item">
-                            <i class="fas fa-code"></i>
-                            <span>Technical Consulting</span>
-                        </div>
-                        <div class="area-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>Academic Collaboration</span>
-                        </div>
-                        <div class="area-item">
-                            <i class="fas fa-rocket"></i>
-                            <span>Startup Projects</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="collaborate-cta">
-                    <p>Interested in working together? Let's discuss how we can create something amazing.</p>
-                    <a href="#contact" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i>
-                        Get In Touch
+            <div class="hero-copy">
+                <p class="eyebrow">AI/ML researcher - PhD candidate - Portland, Oregon</p>
+                <h1 id="hero-title">Engineering robust ML for vision, language, and agents.</h1>
+                <p class="hero-lede">
+                    I am Shayan Jalalipour, a Computer Science PhD candidate at Portland State University working across machine learning, reinforcement learning, computer vision, generative models, and AI code reliability.
+                </p>
+                <div class="hero-actions" aria-label="Primary actions">
+                    <a class="button button-primary" href="resume.pdf" target="_blank" rel="noopener">
+                        <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                        Resume
+                    </a>
+                    <a class="button button-secondary" href="#publications">
+                        <i class="fas fa-book-open" aria-hidden="true"></i>
+                        Publications
+                    </a>
+                    <a class="button button-secondary" href="https://www.linkedin.com/in/shayanjalalipour/" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        LinkedIn
+                    </a>
+                    <a class="button button-secondary" href="https://github.com/shayan223" target="_blank" rel="noopener">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        GitHub
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Experience</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">JavaScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">SQL</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">C++</span>
-                        </div>
-                    </div>
+        <section id="focus" class="section focus-section" aria-labelledby="focus-title">
+            <div class="section-heading">
+                <p class="eyebrow">AI and ML roles</p>
+                <h2 id="focus-title">Research depth. Practical delivery.</h2>
+            </div>
+            <div class="focus-grid">
+                <article class="focus-item">
+                    <span class="item-marker">01</span>
+                    <h3>Robust AI</h3>
+                    <p>Designing attacks and defenses for image models, diffusion pipelines, and multimodal RL agents.</p>
+                </article>
+                <article class="focus-item">
+                    <span class="item-marker">02</span>
+                    <h3>Generative systems</h3>
+                    <p>Working with diffusion models, transformers, LLMs, multimodal models, and RL environments.</p>
+                </article>
+                <article class="focus-item">
+                    <span class="item-marker">03</span>
+                    <h3>Computer vision</h3>
+                    <p>Using object detection, GIS, LiDAR-derived data, and spatial analysis for applied ML problems.</p>
+                </article>
+                <article class="focus-item">
+                    <span class="item-marker">04</span>
+                    <h3>ML engineering</h3>
+                    <p>Building with Python, PyTorch, CUDA, TensorFlow, Hugging Face, Docker, Kubernetes, SQL, AWS, and GCP.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="section experience-section" aria-labelledby="experience-title">
+            <div class="section-heading">
+                <p class="eyebrow">Current work</p>
+                <h2 id="experience-title">AI Research, Data Science, and Teaching</h2>
+            </div>
+            <div class="experience-layout">
+                <div class="timeline" aria-label="Experience timeline">
+                    <article class="timeline-item">
+                        <p class="timeline-date">Jun 2022 - Present</p>
+                        <h3>Machine Learning Research Assistant - Portland State University</h3>
+                        <p>NSF-funded research in computer vision, generative models, adversarial robustness, and reinforcement learning.</p>
+                    </article>
+                    <article class="timeline-item">
+                        <p class="timeline-date">Oct 2025 - Present</p>
+                        <h3>Handshake MOVE Fellow - Handshake</h3>
+                        <p>Reviewing LLM-generated ML code for scientific validity, edge cases, and reproducibility risks.</p>
+                    </article>
+                    <article class="timeline-item">
+                        <p class="timeline-date">Sep 2021 - Present</p>
+                        <h3>Teaching Assistant - Portland State University</h3>
+                        <p>Supporting courses in Reinforcement Learning, Virtual Reality, and Natural Language Processing.</p>
+                    </article>
+                    <article class="timeline-item">
+                        <p class="timeline-date">Jun 2019 - Sep 2019</p>
+                        <h3>Data Scientist - Vacasa</h3>
+                        <p>Built data analysis tools and geospatial pipelines for operational data.</p>
+                    </article>
                 </div>
-
-                <div class="skill-category">
-                    <h3>Technologies & Frameworks</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">React.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">Node.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">TensorFlow</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">PyTorch</span>
-                        </div>
+                <aside class="credential-panel" aria-label="Education and selected skills">
+                    <h3>Education</h3>
+                    <ul class="credential-list">
+                        <li><strong>PhD, Computer Science</strong><span>Portland State University, 2022-2026</span></li>
+                        <li><strong>MS, Computer Science</strong><span>Portland State University, 2020-2022</span></li>
+                        <li><strong>BS, Computer Science</strong><span>Portland State University, 2016-2020</span></li>
+                    </ul>
+                    <h3>Skills</h3>
+                    <div class="skill-cloud" aria-label="Selected AI and ML skills">
+                        <span>PyTorch</span>
+                        <span>CUDA</span>
+                        <span>Hugging Face</span>
+                        <span>LLMs</span>
+                        <span>Diffusion Models</span>
+                        <span>Transformers</span>
+                        <span>Computer Vision</span>
+                        <span>Reinforcement Learning</span>
+                        <span>GNNs</span>
+                        <span>GIS</span>
+                        <span>Docker</span>
+                        <span>AWS/GCP</span>
                     </div>
-                </div>
+                </aside>
+            </div>
+        </section>
 
-                <div class="skill-category">
-                    <h3>Data Science & ML</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">Machine Learning</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">Deep Learning</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">Data Analysis</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">Statistical Modeling</span>
-                        </div>
+        <section id="publications" class="section publications-section" aria-labelledby="publications-title">
+            <div class="section-heading">
+                <p class="eyebrow">Publications</p>
+                <h2 id="publications-title">Publications in Adversarial ML, Multimodal RL, Diffusion, and Computer Vision.</h2>
+            </div>
+            <div class="publication-list">
+                <article class="publication-item publication-featured">
+                    <div class="publication-year">2026</div>
+                    <div class="publication-body">
+                        <p class="publication-label">Latest publication</p>
+                        <h3>Understanding Adversarial Vulnerabilities and Emergent Patterns in Multimodal RL</h3>
+                        <p>Studies adversarial vulnerabilities and emergent behavior in multimodal RL agents.</p>
+                        <p class="publication-venue">2026 International Conference on Semantic Computing (ICSC)</p>
+                        <a href="https://ieeexplore.ieee.org/document/11486392" target="_blank" rel="noopener">Read on IEEE Xplore</a>
                     </div>
-                </div>
+                </article>
+                <article class="publication-item">
+                    <div class="publication-year">2025</div>
+                    <div class="publication-body">
+                        <h3>OSA-Diff: An Origin Sampling Based Adversarial Attack Using Diffusion Models</h3>
+                        <p>Introduces a diffusion-based adversarial attack with faster convergence and lower training overhead.</p>
+                        <p class="publication-venue">2025 19th International Conference on Semantic Computing (ICSC)</p>
+                        <a href="https://ieeexplore.ieee.org/document/11036312" target="_blank" rel="noopener">Read on IEEE Xplore</a>
+                    </div>
+                </article>
+                <article class="publication-item">
+                    <div class="publication-year">2023</div>
+                    <div class="publication-body">
+                        <h3>Noisy-Defense Variational Auto-Encoder (ND-VAE): An Adversarial Defense Framework to Eliminate Adversarial Attacks</h3>
+                        <p>Presents a VAE-based defense for removing adversarial perturbations from images.</p>
+                        <p class="publication-venue">2023 Fifth International Conference on Transdisciplinary AI (TransAI)</p>
+                        <a href="https://ieeexplore.ieee.org/document/10387596" target="_blank" rel="noopener">Read on IEEE Xplore</a>
+                    </div>
+                </article>
+                <article class="publication-item">
+                    <div class="publication-year">2023</div>
+                    <div class="publication-body">
+                        <h3>Deep Learning-Based Spatial Detection of Drainage Structures Using Advanced Object Detection Methods</h3>
+                        <p>Evaluates Faster R-CNN, DINO, DETR:DINO, and YOLOv5 for drainage-structure detection.</p>
+                        <p class="publication-venue">2023 Fifth International Conference on Transdisciplinary AI (TransAI)</p>
+                        <a href="https://ieeexplore.ieee.org/document/10387628" target="_blank" rel="noopener">Read on IEEE Xplore</a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">Git & GitHub</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">Docker</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">AWS & GCP</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">Jupyter Notebooks</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Research Areas</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">Computer Vision</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">Adversarial Robustness</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">Reinforcement Learning</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">Diffusion Models</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">Research & Analysis</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">Problem Solving</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">Technical Writing</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span class="skill-name">Team Collaboration</span>
-                        </div>
-                    </div>
+        <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+            <div class="contact-intro">
+                <p class="eyebrow">Open to AI/ML opportunities</p>
+                <h2 id="contact-title">Research, ML engineering, or applied AI.</h2>
+                <div class="contact-links" aria-label="Contact links">
+                    <a href="https://www.linkedin.com/in/shayanjalalipour/" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/shayan223" target="_blank" rel="noopener">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        GitHub
+                    </a>
+                    <a href="resume.pdf" target="_blank" rel="noopener">
+                        <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                        Resume
+                    </a>
+                    <span>
+                        <i class="fas fa-location-dot" aria-hidden="true"></i>
+                        Portland, OR
+                    </span>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Research Section -->
-    <section id="research" class="research">
-        <div class="container">
-            <h2 class="section-title">Research Papers</h2>
-            <div class="research-grid">
-                <div class="research-card">
-                    <div class="research-icon">
-                        <i class="fas fa-microscope"></i>
-                    </div>
-                    <h3>OSA-Diff: An Origin Sampling Based Adversarial Attack Using Diffusion Models</h3>
-                    <p class="research-abstract">
-                        We show that diffusion models can be used to create end-to-end hidden adversarial perturbations 
-                        with high rate of success, and propose a novel diffusion based adversarial attack that allows for substantially 
-                        faster training time (through improved convergence on high quality images) and with substantially 
-                        less computational overhead than typical diffusion model training
-                    </p>
-                    <div class="research-meta">
-                        <!-- <span class="research-year">2025</span> -->
-                        <span class="research-journal">2025 19th International Conference on Semantic Computing (ICSC)</span>
-                    </div>
-                    <a href="https://ieeexplore.ieee.org/document/11036312" class="research-link" target="_blank">
-                        <i class="fas fa-external-link-alt"></i>
-                        Read Paper
-                    </a>
-                </div>
-
-                <div class="research-card">
-                    <div class="research-icon">
-                        <i class="fas fa-flask"></i>
-                    </div>
-                    <h3>Noisy-Defense Variational Auto-Encoder (ND-VAE): An Adversarial Defense Framework to Eliminate Adversarial Attacks</h3>
-                    <p class="research-abstract">
-                        This paper presents a robust adversarial defense mechanism, Noisy-Defense Variational 
-                        Auto-Encoder (ND-VAE), that combines the strengths of Nouveau VAE (NVAE) and Defense-VAE 
-                        to effectively eliminate adversarial attacks from contaminated images
-                    </p>
-                    <div class="research-meta">
-                        <!-- <span class="research-year">2023</span> -->
-                        <span class="research-journal">2023 Fifth International Conference on Transdisciplinary AI (TransAI)</span>
-                    </div>
-                    <a href="https://ieeexplore.ieee.org/document/10387596" class="research-link" target="_blank">
-                        <i class="fas fa-external-link-alt"></i>
-                        Read Paper
-                    </a>
-                </div>
-
-                <div class="research-card">
-                    <div class="research-icon">
-                        <i class="fas fa-atom"></i>
-                    </div>
-                    <h3>Deep Learning-Based Spatial Detection of Drainage Structures using Advanced Object Detection Methods</h3>
-                    <p class="research-abstract">
-                        The paper explores multiple advanced deep learning-based object detection models, 
-                        including Faster RCNN, DINO, DETR:DINO and YOLOv5, to analyze the distinctive patterns 
-                        exhibited by drainage structures.
-                    </p>
-                    <div class="research-meta">
-                        <!-- <span class="research-year">2023</span> -->
-                        <span class="research-journal">2023 Fifth International Conference on Transdisciplinary AI (TransAI)</span>
-                    </div>
-                    <a href="https://ieeexplore.ieee.org/document/10387628" class="research-link" target="_blank">
-                        <i class="fas fa-external-link-alt"></i>
-                        Read Paper
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always interested in new opportunities, collaborations, and interesting discussions. 
-                       Feel free to reach out!</p>
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <span>Fill out the form with your info and I will get back to you as soon as possible!</span>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Portland, OR, USA</span>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fab fa-linkedin"></i>
-                            <a href="https://www.linkedin.com/in/shayanjalalipour/" target="_blank"><span>My LinkedIn Profile</span></a>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/shayan223" target="_blank"><span>My GitHub Profile</span></a>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-file-pdf"></i>
-                            <a href="resume.pdf" target="_blank"><span>Download My Resume</span></a>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" action="https://formspree.io/f/xvgrnqkk" method="POST">
+            <form class="contact-form" action="https://formspree.io/f/xvgrnqkk" method="POST">
+                <div class="form-row">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" autocomplete="name" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
                     </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i>
-                        Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Shayan Jalalipour. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="https://github.com/shayan223" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/shayanjalalipour/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <!-- <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> -->
                 </div>
-            </div>
-        </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="button button-primary">
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                    Send Message
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Shayan Jalalipour.</p>
+        <a href="#home">Back to top</a>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20260604"></script>
 </body>
-</html> 
+</html>
